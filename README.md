@@ -14,7 +14,7 @@
 
 ## Prerequisites
 
-Before you begin, you'll need to create an API key from Groq:
+- For Macos/Linux.
 - Sign up or log in to Groq.
 - Generate your API key for free usage.
 
@@ -33,7 +33,7 @@ pip install groq
 Next, add your `GROQ_API_KEY` to your global environment variables:
 
 ```zsh
-export GROQ_API_KEY=<your-api-key-here>
+echo "export GROQ_API_KEY=<your-api-key-here>" >> ~/.zshrc && source ~/.zshrc
 ```
 
 ### 3. Clone the Groq AI Suggestions Repository
