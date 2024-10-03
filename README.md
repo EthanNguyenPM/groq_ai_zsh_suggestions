@@ -78,7 +78,8 @@ Type out what you'd like to do in English, then hit the corresponding hotkey:
 ### Explain command
 - Command + option + g
 
-## > [!WARNING]
+## [!WARNING]
+
 > This can suggest incorrect or potentially harmful commands. Always review and understand the suggested commands before executing them.
 > Using this may incur costs if `Groq` start to require to pay for API_KEY usage. You are responsible for any charges associated with API usage.
 
