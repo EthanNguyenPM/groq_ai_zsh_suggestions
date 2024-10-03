@@ -19,7 +19,8 @@
 ## Prerequisites
 
 - For Macos/Linux.
-- Python 3, `pygments`
+- Installed Python 3, `pygments`
+- Installed Zsh, oh-my-zsh 
 - Sign up or log in to Groq.
 - Generate your API key for free usage.
 
