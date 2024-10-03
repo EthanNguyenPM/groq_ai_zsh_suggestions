@@ -91,4 +91,4 @@ Type out what you'd like to do in English, then hit the corresponding hotkey:
 
 ## References
 
-This repository is a fork of the [zsh-llm-suggestions](https://github.com/stefanheule/zsh-llm-suggestions) project. The main difference is that this version is tailored to work with Groq's AI models.
+This repository is a fork of the [zsh-llm-suggestions](https://github.com/stefanheule/zsh-llm-suggestions) project. The main difference is that this version is tailored to work only with Groq's AI models.
