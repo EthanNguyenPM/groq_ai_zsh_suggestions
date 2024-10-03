@@ -14,7 +14,7 @@
 
 ## Demo
 
-
+![demo](demo.gif)
 
 ## Prerequisites
 
