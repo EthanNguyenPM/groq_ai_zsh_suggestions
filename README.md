@@ -1,4 +1,5 @@
 <!--toc:start-->
+- [Overview](#overview)
 - [Demo](#demo)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -12,6 +13,10 @@
 - [[!WARNING]](#warning)
 - [References](#references)
 <!--toc:end-->
+
+## Overview
+
+This repository provides a plugin for the Zsh terminal that integrates Groq's AI models to offer intelligent command suggestions and explanations. By using Groq's API, you can describe what you want to do in plain English, and the AI will suggest the appropriate terminal command. Additionally, it can explain complex commands that you may not understand.
 
 ## Demo
 
