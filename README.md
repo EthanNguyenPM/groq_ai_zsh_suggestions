@@ -45,7 +45,7 @@ echo "export GROQ_API_KEY=<your-api-key-here>" >> ~/.zshrc && source ~/.zshrc
 
 ### 3. Clone the Groq AI Suggestions Repository
 
-Clone the repository into your custom plugins folder in `Oh My Zsh`. This ensures that the plugin is available each time you start the terminal:
+Clone the repository into your custom plugins folder in `Oh My Zsh`. This ensures that the plugin is available to use by `zsh`:
 
 ```zsh
 git clone https://github.com/ThanhTanPM2000/groq_ai_zsh_suggestions.git ~/.oh-my-zsh/custom/plugins/groq_ai_zsh_suggestions
