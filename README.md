@@ -1,3 +1,17 @@
+<!--toc:start-->
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+  - [1. Install the Groq Python Library](#1-install-the-groq-python-library)
+  - [2. Set Up the API_KEY](#2-set-up-the-apikey)
+  - [3. Clone the Groq AI Suggestions Repository](#3-clone-the-groq-ai-suggestions-repository)
+  - [4. Configure Your .zshrc](#4-configure-your-zshrc)
+- [Usage](#usage)
+  - [Suggest command](#suggest-command)
+  - [Explain command](#explain-command)
+- [> [!WARNING]](#warning)
+- [References](#references)
+<!--toc:end-->
+
 ## Prerequisites
 
 Before you begin, you'll need to create an API key from Groq:
@@ -71,4 +85,3 @@ Type out what you'd like to do in English, then hit the corresponding hotkey:
 ## References
 
 This repository is a fork of the [zsh-llm-suggestions](https://github.com/stefanheule/zsh-llm-suggestions) project. The main difference is that this version is tailored to work with Groq's AI models.
-
