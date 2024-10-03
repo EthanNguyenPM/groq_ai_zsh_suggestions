@@ -1,4 +1,5 @@
 <!--toc:start-->
+- [Demo](#demo)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
   - [1. Install the Groq Python Library](#1-install-the-groq-python-library)
@@ -8,7 +9,7 @@
 - [Usage](#usage)
   - [Suggest command](#suggest-command)
   - [Explain command](#explain-command)
-- [> [!WARNING]](#warning)
+- [[!WARNING]](#warning)
 - [References](#references)
 <!--toc:end-->
 
