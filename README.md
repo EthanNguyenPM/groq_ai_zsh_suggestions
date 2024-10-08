@@ -26,7 +26,7 @@ This repository provides a plugin for the Zsh terminal that integrates Groq's AI
 
 - For Macos/Linux.
 - Installed Python 3, `pygments`
-- Installed Zsh, oh-my-zsh 
+- Installed Zsh, oh-my-zsh
 - Sign up or log in to Groq.
 - Generate your API key for free usage.
 
@@ -71,24 +71,33 @@ nvim ~/.zshrc # nano ~/.zshrc
 ```zsh
 plugins=(... groq_ai_zsh_suggestions) # should update plugins by adding groq_ai_zsh_suggestions at the end of line
 
-bindkey '^g' groq_ai_zsh_suggestions         # Ctrl + G: Suggest command
-bindkey '^[^g' groq_ai_zsh_suggestions       # Ctrl + Alt + G: Explain command
+bindkey '^g' groq_ai_zsh_suggestions_generate # Ctrl + G to have Groq suggest a command
+bindkey '^[g' groq_ai_zsh_suggestions_explain    # Option + G for explanations
+bindkey '^[G' groq_ai_zsh_suggestions_script  # Option + Shift + G: Explain command
 ```
 
 3. Apply the changes by sourcing your `.zshrc`:
 
 ```zsh
+source ~/.oh-my-zsh/custom/plugins/groq_ai_zsh_suggestions/groq_ai_zsh_suggestions.plugin.zsh && \
 source ~/.zshrc
 ```
 
 ## Usage
 
 ### Suggest command
+
 Type out what you'd like to do in English, then hit the corresponding hotkey:
+
 - Command + g
 
 ### Explain command
-- Command + option + g
+
+- Option + g
+
+### Create a script for the command lines
+
+- Option + shift + g
 
 ## [!WARNING]
 

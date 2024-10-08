@@ -31,7 +31,7 @@ zsh_llm_suggestions_run_query() {
   echo -n "$query" | eval $llm $mode >$result_file
 }
 
-zsh_llm_completion() {
+zsh_completion() {
   local llm="$1"
   local mode="$2"
   local query=${BUFFER}
@@ -85,14 +85,19 @@ zsh_llm_completion() {
 
 SCRIPT_DIR=$(cd -- "$(dirname -- "$0")" &>/dev/null && pwd)
 
-zsh_llm_suggestions_groq() {
-  zsh_llm_completion "$SCRIPT_DIR/zsh-llm-suggestions-groq.py" "generate"
+groq_ai_zsh_suggestions_generate () {
+  zsh_completion "$SCRIPT_DIR/groq_ai_zsh_suggestions.py" "generate"
 }
 
-zsh_llm_suggestions_groq_script() {
-  zsh_llm_completion "$SCRIPT_DIR/zsh-llm-suggestions-groq.py" "script"
+groq_ai_zsh_suggestions_explain () {
+  zsh_completion "$SCRIPT_DIR/groq_ai_zsh_suggestions.py" "explain"
+}
+
+groq_ai_zsh_suggestions_script() {
+  zsh_completion "$SCRIPT_DIR/groq_ai_zsh_suggestions.py" "script"
 }
 
 #zle -N zsh_llm_suggestions_anthropic
-zle -N zsh_llm_suggestions_groq
-zle -N zsh_llm_suggestions_groq_script
+zle -N groq_ai_zsh_suggestions_generate
+zle -N groq_ai_zsh_suggestions_explain
+zle -N groq_ai_zsh_suggestions_script
