@@ -97,7 +97,6 @@ groq_ai_zsh_suggestions_script() {
   zsh_completion "$SCRIPT_DIR/groq_ai_zsh_suggestions.py" "script"
 }
 
-#zle -N zsh_llm_suggestions_anthropic
 zle -N groq_ai_zsh_suggestions_generate
 zle -N groq_ai_zsh_suggestions_explain
 zle -N groq_ai_zsh_suggestions_script
