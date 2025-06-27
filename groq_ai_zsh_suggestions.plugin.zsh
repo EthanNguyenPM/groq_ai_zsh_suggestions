@@ -100,3 +100,7 @@ groq_ai_zsh_suggestions_script() {
 zle -N groq_ai_zsh_suggestions_generate
 zle -N groq_ai_zsh_suggestions_explain
 zle -N groq_ai_zsh_suggestions_script
+
+bindkey '^g' groq_ai_zsh_suggestions_generate # Ctrl + G to have Groq suggest a command
+bindkey '^[g' groq_ai_zsh_suggestions_explain    # Option + G for explanations
+bindkey '^[G' groq_ai_zsh_suggestions_script  # Option + Shift + G: Explain command

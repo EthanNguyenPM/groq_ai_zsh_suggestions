@@ -1,4 +1,5 @@
 <!--toc:start-->
+
 - [Overview](#overview)
 - [Demo](#demo)
 - [Prerequisites](#prerequisites)
@@ -48,6 +49,12 @@ Next, add your `GROQ_API_KEY` to your global environment variables:
 echo "export GROQ_API_KEY=<your-api-key-here>" >> ~/.zshrc && source ~/.zshrc
 ```
 
+In case you use `zsh` in `.config/zsh` folder, you can add it to your `base.zsh` file:
+
+```zsh
+echo "export GROQ_API_KEY=<your-api-key-here>" >> ~/.config/zsh/base.zsh && source ~/.zshrc
+```
+
 ### 3. Clone the Groq AI Suggestions Repository
 
 Clone the repository into your custom plugins folder in `Oh My Zsh`. This ensures that the plugin is available to use by `zsh`:
@@ -56,30 +63,40 @@ Clone the repository into your custom plugins folder in `Oh My Zsh`. This ensure
 git clone https://github.com/ThanhTanPM2000/groq_ai_zsh_suggestions.git ~/.oh-my-zsh/custom/plugins/groq_ai_zsh_suggestions
 ```
 
+Anyone use `.config/zsh` folder just like me, you can clone it into your `.config/zsh` folder:
+
+```zsh
+git clone https://github.com/ThanhTanPM2000/groq_ai_zsh_suggestions.git ~/.config/zsh/plugins/groq_ai_zsh_suggestions
+```
+
 ### 4. Configure Your .zshrc
 
 To activate the plugin, open your `.zshrc` file and add `groq_ai_zsh_suggestions` to the list of plugins. Also, configure the hotkeys for triggering the suggestions and explanations.
 
 1. Open `.zshrc` in your preferred editor:
 
-```bash
+```zsh
 nvim ~/.zshrc # nano ~/.zshrc
 ```
 
 2. Add the following lines:
 
+If you're using `oh-my-zsh`, add the plugin to your plugins list. On the other hand, if you're using `.config/zsh`, you can skip this step.
+
 ```zsh
 plugins=(... groq_ai_zsh_suggestions) # should update plugins by adding groq_ai_zsh_suggestions at the end of line
-
-bindkey '^g' groq_ai_zsh_suggestions_generate # Ctrl + G to have Groq suggest a command
-bindkey '^[g' groq_ai_zsh_suggestions_explain    # Option + G for explanations
-bindkey '^[G' groq_ai_zsh_suggestions_script  # Option + Shift + G: Explain command
 ```
 
 3. Apply the changes by sourcing your `.zshrc`:
 
 ```zsh
 source ~/.oh-my-zsh/custom/plugins/groq_ai_zsh_suggestions/groq_ai_zsh_suggestions.plugin.zsh && \
+source ~/.zshrc
+```
+
+If You're using "StarShip" instead of "oh-my-zsh" and applying ".config/zsh/base.zsh" file, you can source the plugin like this:
+
+```zsh
 source ~/.zshrc
 ```
 
