@@ -40,7 +40,8 @@ def generate_shell_script(client, buffer, os_info):
                          assume the user has appropriate authentication set up and do not include password prompts."""
 
     response = client.chat.completions.create(
-        model="llama3-70b-8192",
+        model="qwen/qwen3-32b",
+        # model="llama3-70b-8192",
         messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": buffer},
